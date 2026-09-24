@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/georgia-energy",
   "title": "Georgia Energy",
   "description": "Georgia (country) electricity system — live grid telemetry and regulator statistics.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/georgia-energy",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-georgia-energy",
