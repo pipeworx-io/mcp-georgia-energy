@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-georgia-energy",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Georgia (country) electricity system — live grid telemetry and regulator statistics.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-634bb1c87f6a59e46e55149a769afe0bde444024646a1831efd3510605ee8e46",
-    "sourceCommit": "91681e9a4a137fa0051d58e32f38c64b6334af5c"
+    "sourceHash": "v1-57d56e80a1841182a6909d814937795f22743d534e261bba0fe9ac1195504b78",
+    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
   }
 }
