@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-georgia-energy",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Georgia (country) electricity system — live grid telemetry and regulator statistics.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-georgia-energy": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "georgia-energy"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-georgia-energy.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/georgia-energy",
   "pipeworx": {
-    "sourceHash": "v1-57d56e80a1841182a6909d814937795f22743d534e261bba0fe9ac1195504b78",
-    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
+    "mode": "gateway",
+    "slug": "georgia-energy",
+    "gatewaySlug": "georgia-energy",
+    "sourceHash": "v1-ebc5c4f3c2e4684b5534f5bc7f63462a00e9c2972de0691ca6150b00421d9fa8",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
